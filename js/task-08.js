@@ -22,7 +22,12 @@ function handleSumbitLoginForm (event) {
         return;
     }
     
-    passwordInputEl.style.boxShadow = `none`
-    console.log(`Login: ${emailInputEl.value}, Password: ${passwordInputEl.value}`);
+    passwordInputEl.style.boxShadow = `none`;
+
+    const inputData = {
+        [emailInputEl.name]: emailInputEl.value,
+        [passwordInputEl.name]: passwordInputEl.value,
+    }
+    console.log(inputData)
     event.currentTarget.reset();
 }
