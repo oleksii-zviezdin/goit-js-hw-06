@@ -1,5 +1,5 @@
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;  
 }
 
 const createBtnEl = document.querySelector(`button[data-create]`);
@@ -32,7 +32,7 @@ function createBoxes() {
     box.style.height = `${baseHeight}px`;
     box.style.width = `${baseWidth}px`;
     box.style.borderRadius = `10%`
-    box.style.boxShadow = `0 0 15px ${color}`
+    box.style.boxShadow = `3px 3px 15px ${color}`
     baseHeight = Number(baseHeight) + 10;
     baseWidth = Number(baseWidth) + 10;
     box.style.backgroundColor = `${color}`;
