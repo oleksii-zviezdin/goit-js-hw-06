@@ -20,6 +20,7 @@ function destroyBoxes() {
 }
 
 function createBoxes() {  
+  // divBoxesEl.innerHTML = ``
   const quantity = divControlsEl.firstElementChild.value;
   const collectionBoxes = []
   
